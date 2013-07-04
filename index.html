@@ -1,168 +1,384 @@
-<!DOCTYPE html>
 <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* Github-like stylesheet (default style). */
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="BWL Prüfungsvorbereitung : Meine Prüfungsvorbereitung für &quot;Gründungsorientierte Einführung in die BWL&quot; an der TU Dresden" />
+/* Eric Meyer's "Reset CSS" 2.0. */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 
-    <title>BWL Prüfungsvorbereitung</title>
-  </head>
+body {
+	line-height: 1;
+}
 
-  <body>
+blockquote, q {
+	quotes: none;
+}
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Mic92/bwl">View on GitHub</a>
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
 
-          <h1 id="project_title">BWL Prüfungsvorbereitung</h1>
-          <h2 id="project_tagline">Meine Prüfungsvorbereitung für &quot;Gründungsorientierte Einführung in die BWL&quot; an der TU Dresden</h2>
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/Mic92/bwl/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/Mic92/bwl/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+/* Custom css begins. */
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+  background-color: #fff;
+  padding: 10px;
+  max-width: 960px;
+  margin: 0 auto;
+}
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="einfhrung" class="anchor" href="#einfhrung"><span class="octicon octicon-link"></span></a>Einführung</h1>
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0 15px;
+  padding: 0;
+  font-weight: bold;
+  line-height: 1.7;
+  cursor: text;
+  position: relative;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 2.5em;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+}
+
+h2 {
+  font-size: 2em;
+  border-bottom: 1px solid #eee;
+  color: #000;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  color: #777;
+  font-size: 1em;
+}
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ccc;
+  padding: 0;
+}
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul li > :first-child,
+ol li > :first-child,
+ul li ul:first-of-type,
+ol li ol:first-of-type,
+ul li ol:first-of-type,
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin-top: 15px;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+table {
+  display: block;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+img {
+  max-width: 100%
+  box-sizing: border-box;
+}
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 2px;
+  padding: 0px 5px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+code {
+  white-space: nowrap;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+</style>
+</head>
+<h1>﻿Gründungsorientierte Einführung in die BWL</h1>
+
+<p>Prüfungsvorbereitung für <a href="http://tu-dresden.de/veranstaltungen/termin/?id=TUD4f6b02ac57889">Vorlesung</a> der Studium Generale von Jörg Knorr</p>
+
+<p><a href="http://mic92.github.io/bwl">Link zu diesem Dokument</a></p>
+
+<h2>Einführung</h2>
 
 <ul>
-<li>
-<strong>Opportunitätskosten:</strong> Entgangene Erlöse durch Verzicht/Investitionen</li>
-</ul><h1>
-<a name="businessplan" class="anchor" href="#businessplan"><span class="octicon octicon-link"></span></a>Businessplan</h1>
+<li><strong>Opportunitätskosten:</strong> Entgangene Erlöse durch Verzicht/Investitionen</li>
+</ul>
 
-<p>Bestandteile:</p>
+<h2>Businessplan - Bestandteile</h2>
 
 <ul>
-<li>
-<strong>Executive Summary:</strong> Zusammenfassung des Businessplans
--&gt; Interesse möglicher Kapitalgeber wecken</li>
-<li>
-<strong>Geschäftsidee:</strong> Vorstellung der Produktidee, Wie wird Geld verdient</li>
-<li>
-<strong>Markt und Wettbewerb:</strong> Branchendaten ein vertiefter Einblick zu
+<li><strong>Executive Summary:</strong> Zusammenfassung des Businessplans
+-> Interesse möglicher Kapitalgeber wecken</li>
+<li><strong>Geschäftsidee:</strong> Vorstellung der Produktidee, Wie wird Geld verdient</li>
+<li><strong>Markt und Wettbewerb:</strong> Branchendaten ein vertiefter Einblick zu
 Konkurrenten/Kunden</li>
-<li>
-<strong>Marketing:</strong> Markteintrittsstrategie</li>
-<li>
-<strong>Gründerteam und Management:</strong> alle Teammitglieder mit ihren spezifischen
+<li><strong>Marketing:</strong> Markteintrittsstrategie</li>
+<li><strong>Gründerteam und Management:</strong> alle Teammitglieder mit ihren spezifischen
 Qualifikationen</li>
-<li>
-<strong>Angaben zum Unternehmen:</strong> Gesellschaftersituation u. die gewählte Rechtsform</li>
-<li>
-<strong>Chancen und Risiken:</strong> Best-case- und Worst-case-Szenarien</li>
-<li>
-<strong>Realisierungsfahrplan:</strong> zeitlichen Ablaufplan</li>
-<li>
-<strong>Finanzplanung:</strong> Gewinn-/Verlustrechnung, Liquiditätsplanung u. Kapitalbedarf</li>
-<li>
-<strong>Anhang:</strong> Zeugnisse, Verträge, Letter of Intent, ...</li>
-</ul><h1>
-<a name="marketing" class="anchor" href="#marketing"><span class="octicon octicon-link"></span></a>Marketing</h1>
+<li><strong>Angaben zum Unternehmen:</strong> Gesellschaftersituation u. die gewählte Rechtsform</li>
+<li><strong>Chancen und Risiken:</strong> Best-case- und Worst-case-Szenarien</li>
+<li><strong>Realisierungsfahrplan:</strong> zeitlichen Ablaufplan</li>
+<li><strong>Finanzplanung:</strong> Gewinn-/Verlustrechnung, Liquiditätsplanung u. Kapitalbedarf</li>
+<li><strong>Anhang:</strong> Zeugnisse, Verträge, Letter of Intent, ...</li>
+</ul>
+
+<h2>Marketing</h2>
 
 <ul>
-<li>
-<strong>Buying Center:</strong> Gruppe von Mitarbeiter, die an einer
+<li><strong>Buying Center:</strong> Gruppe von Mitarbeiter, die an einer
 Kaufentscheidung beteiligt ist</li>
-<li>
-<strong>Käufermarkt:</strong> Angebot &gt; Nachfrage (Lebensmittelhandel)</li>
-<li>
-<strong>Verkäufermarkt:</strong> Angebot &lt; Nachfrage (Drogenhandel)</li>
-<li>
-<strong>Marketingmix:</strong> die 4 P's
-
+<li><strong>Käufermarkt:</strong> Angebot > Nachfrage (Lebensmittelhandel)</li>
+<li><strong>Verkäufermarkt:</strong> Angebot &lt; Nachfrage (Drogenhandel)</li>
+<li><strong>Marketingmix:</strong> die 4 P's
 <ul>
-<li>
-<strong>Price:</strong>
-
+<li><strong>Price:</strong>
 <ul>
-<li>
-<strong>Preisdifferenzierung:</strong> mengenmäßig, zeitlich, räumlich, personell, leistungsbezogen</li>
-<li>
-<strong>Preisabfolge:</strong>
-
+<li><strong>Preisdifferenzierung:</strong> mengenmäßig, zeitlich, räumlich, personell, leistungsbezogen</li>
+<li><strong>Preisabfolge:</strong>
 <ol>
-<li>
-<strong>Penetration:</strong> Einführung zu Niedrigpreisen bei Mindestqualität, später Preiserhöhung</li>
-<li>
-<strong>Abschöpfung:</strong> hoher Anfangspreis, dann schrittweise Preissenkung</li>
-</ol>
-</li>
-</ul>
-</li>
-<li>
-<strong>Place (Distributionspolitik):</strong> Standortwahl, direkter/indirekter Vertrieb, Lagerhaltung</li>
-<li>
-<strong>Promotion (Kommunikationspolitik):</strong>
+<li><strong>Penetration:</strong> Einführung zu Niedrigpreisen bei Mindestqualität, später Preiserhöhung</li>
+<li><strong>Abschöpfung:</strong> hoher Anfangspreis, dann schrittweise Preissenkung</li>
+</ol></li>
+</ul></li>
+<li><strong>Place (Distributionspolitik):</strong> Standortwahl, direkter/indirekter Vertrieb, Lagerhaltung</li>
+<li><strong>Promotion (Kommunikationspolitik):</strong>
 Werbung, Verkaufsförderung(Promotion), Öffentlichkeitsarbeit (PR)</li>
-<li>
-<strong>Product:</strong>
-
+<li><strong>Product:</strong>
 <ul>
-<li>
-<strong>Produktlebenszyklus:</strong> Einführung, Wachstum, Reife, Rückgang</li>
+<li><strong>Produktlebenszyklus:</strong> Einführung, Wachstum, Reife, Rückgang</li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul><h2>
-<a name="schritte-der-marktanalyse" class="anchor" href="#schritte-der-marktanalyse"><span class="octicon octicon-link"></span></a>Schritte der Marktanalyse</h2>
+
+<h3>Schritte der Marktanalyse</h3>
 
 <ol>
 <li><strong>relevanter Markt</strong></li>
-<li>
-<strong>Marktsegmentierung:</strong> Aufteilung des relevanten Marktes in Käufergruppen (Segmente) nach bestimmten Kriterien
-
+<li><strong>Marktsegmentierung:</strong> Aufteilung des relevanten Marktes in Käufergruppen (Segmente) nach bestimmten Kriterien
 <ul>
-<li>Ziel: Gleiche Marketingstrategie je Segment -&gt; differenzierte
+<li>Ziel: Gleiche Marketingstrategie je Segment -> differenzierte
 Marketingstrategie</li>
 <li>Anforderungen an ein Segment: Messbarkeit, Mindestgröße, Konstanz</li>
-</ul>
-</li>
+</ul></li>
 <li><strong>Zielmarktfestlegung</strong></li>
-<li>
-<strong>Positionierung:</strong>
-
+<li><strong>Positionierung:</strong>
 <ul>
 <li>Timingstrategien (Zeit des Markteintritt: Pionier,frühe Folger,später Folger)</li>
-</ul>
-</li>
-<li>
-<strong>Markteintrittsbarriere:</strong> Hindernisse, die den Markteintritt; Nachteile gegenüber etablierten Unternehmen</li>
-<li>
-<strong>Substitute:</strong> Produkte/Dienstleistungen, die das selbe Bedürfnis auf andere Weise befriedigen</li>
-<li>
-<strong>Branchenanalyse:</strong> 5-Forces nach Porter
-<img src="http://i.imgur.com/EhN9ua1.png" alt="5-Forces">
+</ul></li>
+<li><strong>Markteintrittsbarriere:</strong> Hindernisse, die den Markteintritt; Nachteile gegenüber etablierten Unternehmen</li>
+<li><strong>Substitute:</strong> Produkte/Dienstleistungen, die das selbe Bedürfnis auf andere Weise befriedigen</li>
+<li><strong>Branchenanalyse:</strong> 5-Forces nach Porter
+<img src="http://i.imgur.com/EhN9ua1.png" alt="5-Forces" title="" />
 von Drtuxy unter der CC by-Lizenz</li>
-<li>
-<strong>SWOT-Analyse</strong>: Matrix -&gt; horizontal: Stärken/Schwächen, vertikal: Chancen/Risiken</li>
-</ol><h1>
-<a name="unternehmensnachfolge" class="anchor" href="#unternehmensnachfolge"><span class="octicon octicon-link"></span></a>Unternehmensnachfolge</h1>
+<li><strong>SWOT-Analyse</strong>: Matrix -> horizontal: Stärken/Schwächen, vertikal: Chancen/Risiken</li>
+</ol>
+
+<h2>Unternehmensnachfolge</h2>
 
 <ul>
-<li>
-<strong>Führungsübertragung:</strong> Übertragen der Aufgaben an einen Nachfolger mit/oder ohne Einarbeitung</li>
-<li>
-<strong>Eigentumsübertragung:</strong> Übertragung des Unternehmenseigentums durch Vererbung, Schenkung oder Verkauf</li>
-<li>
-<strong>MBO (Management Buy-Out):</strong> Nachfolger aus dem Unternehmen</li>
-<li>
-<strong>MBI (Management Buy-In):</strong> Nachfolger aus dem Umfeld</li>
-</ul><h1>
-<a name="rechtsformen" class="anchor" href="#rechtsformen"><span class="octicon octicon-link"></span></a>Rechtsformen</h1>
+<li><strong>Führungsübertragung:</strong> Übertragen der Aufgaben an einen Nachfolger mit/oder ohne Einarbeitung</li>
+<li><strong>Eigentumsübertragung:</strong> Übertragung des Unternehmenseigentums durch Vererbung, Schenkung oder Verkauf</li>
+<li><strong>MBO (Management Buy-Out):</strong> Nachfolger aus dem Unternehmen</li>
+<li><strong>MBI (Management Buy-In):</strong> Nachfolger aus dem Umfeld</li>
+</ul>
 
-<h2>
-<a name="gewerbe" class="anchor" href="#gewerbe"><span class="octicon octicon-link"></span></a>Gewerbe</h2>
+<h2>Rechtsformen</h2>
+
+<h3>Gewerbe</h3>
 
 <p>Jede wirtschaftlichte Tätigkeit mit Gewinnerzielung mit Ausnahme der <em>freien Berufe</em> und
 Landwirtschaft zählt zum Gewerbe.</p>
@@ -173,129 +389,103 @@ Landwirtschaft zählt zum Gewerbe.</p>
 <li>Gewerbesteuer</li>
 <li>Anmeldung beim Gewerbeamt (sonst beim Finanzamt)</li>
 <li>doppelte Buchführung bei Handelsgewerben</li>
-</ul><h2>
-<a name="freie-berufe" class="anchor" href="#freie-berufe"><span class="octicon octicon-link"></span></a>Freie Berufe</h2>
+</ul>
+
+<h3>Freie Berufe</h3>
 
 <ul>
 <li>ausgewählte Berufe, selbsständig, besondere Qualifikation</li>
 <li>einfache Buchführung</li>
-</ul><h2>
-<a name="kaufmann" class="anchor" href="#kaufmann"><span class="octicon octicon-link"></span></a>Kaufmann</h2>
+</ul>
+
+<h3>Kaufmann</h3>
 
 <ul>
-<li>
-<strong>Handelsregister:</strong> Öffentliches Verzeichnis von angemeldeten Kaufmännern,
+<li><strong>Handelsregister:</strong> Öffentliches Verzeichnis von angemeldeten Kaufmännern,
 hat Publikations-, Beweis-, Kontroll- und Schutzfunktion</li>
-<li>
-<strong>Ist-Kaufmann:</strong> Gewerbe, die durch ihre Größe/Umsatz in das Handelsgewerbe fallen</li>
-<li>
-<strong>Kann-Kaufmann:</strong> freiwillige Eintragung</li>
-<li>
-<strong>Formkaufmann:</strong> Handelsgesellschaften (Rechtsform bedingt)</li>
+<li><strong>Ist-Kaufmann:</strong> Gewerbe, die durch ihre Größe/Umsatz in das Handelsgewerbe fallen</li>
+<li><strong>Kann-Kaufmann:</strong> freiwillige Eintragung</li>
+<li><strong>Formkaufmann:</strong> Handelsgesellschaften (Rechtsform bedingt)</li>
 <li>Folgen:
-
 <ul>
 <li>Recht auf <em>Firmennamen/Schutz</em> vor Verwechselung</li>
-<li>können <em>Prokura</em> (Handelsvollmacht) ersteilen -&gt; geschäftliche
+<li>können <em>Prokura</em> (Handelsvollmacht) ersteilen -> geschäftliche
 Vertretungsmacht</li>
 <li>müssen Handelsbücher/Bilanzen/Inventuren führen</li>
 <li>können im Namen der Firma klagen</li>
+</ul></li>
 </ul>
-</li>
-</ul><h2>
-<a name="rechtsformen-1" class="anchor" href="#rechtsformen-1"><span class="octicon octicon-link"></span></a>Rechtsformen</h2>
+
+<h3>Rechtsformen</h3>
 
 <ul>
-<li>
-<strong>Einzelunternehmen:</strong> Einzelkaufmann, freie Berufe, Kleingewerbe
-
+<li><strong>Einzelunternehmen:</strong> Einzelkaufmann, freie Berufe, Kleingewerbe
 <ul>
-<li>unbeschränkte Haftung -&gt; hohes Risiko bei Fehlentscheidungen, aber hohe
+<li>unbeschränkte Haftung -> hohes Risiko bei Fehlentscheidungen, aber hohe
 Kreditglaubwürdigkeit</li>
 <li>unterliegt einer (natürlichen) Person</li>
 <li>kein Mindeskapital/Gründungskosten</li>
 <li>keine Gewinnteilung</li>
-</ul>
-</li>
-<li>
-<strong>Personengesellschaften:</strong> Gbr, OHG, Kommanditgesellschaft (KG), PartG
-
+</ul></li>
+<li><strong>Personengesellschaften:</strong> Gbr, OHG, Kommanditgesellschaft (KG), PartG
 <ul>
 <li>Zusammenschluss mehrerer Personen (nat./jur.) durch einen Gesellschaftsvertrag</li>
 <li>Haftung: in der Regel unbeschränkt, Außnahme KG</li>
 <li>Gewinnbesteuerung: Gewinn wird auf Gesellschafter verteilt und bei diesen
 versteuert (Transparenzprinzip)</li>
 <li>Mitwirkung: ?</li>
-</ul>
-</li>
-<li>
-<strong>Kapitalgesellschaften:</strong> GmbH, UG, AG, Societas Europaea (SE), Genossenschaft eG
-
+</ul></li>
+<li><strong>Kapitalgesellschaften:</strong> GmbH, UG, AG, Societas Europaea (SE), Genossenschaft eG
 <ul>
 <li>eigenständige juristische Person, von den Mitgliedern unabhängiger Bestand (Trennung von Gesellschaftern und Gesellschaft)</li>
 <li>Haftung: beschränkt auf Gesellschaftsvermögen</li>
 <li>Gewinnbesteuerung: Gewinn wird sowohl bei der Gesellschaft als auch bei den
 Gesellschaftern versteuert (Trennungsprinzip)</li>
 <li>Mitwirkung: ?</li>
+</ul></li>
 </ul>
-</li>
-</ul><h1>
-<a name="steuern" class="anchor" href="#steuern"><span class="octicon octicon-link"></span></a>Steuern</h1>
+
+<h2>Steuern</h2>
 
 <ul>
-<li>
-<strong>Einkommenssteuer (Est):</strong>
-
+<li><strong>Einkommenssteuer (Est):</strong>
 <ul>
 <li>Steuersubjekt: natürliche Personen</li>
 <li>Bemessungsgrundlage: zu versteuerndes Einkommen</li>
 <li>Steuersatz: Progression von 14% bis max 45%, Freibetrag ~8000€</li>
-</ul>
-</li>
-<li>
-<strong>Körperschaftssteuer (Kst):</strong>
-
+</ul></li>
+<li><strong>Körperschaftssteuer (Kst):</strong>
 <ul>
 <li>Steuersubjekt: juristischen Personen</li>
 <li>Bemessungsgrundlage: Einkommen ermittelt durch Betriebsvermögensvergleich</li>
 <li>Steuersatz: konst. 15%</li>
-</ul>
-</li>
-<li>
-<strong>Solidaritätszuschlag:</strong>
-
+</ul></li>
+<li><strong>Solidaritätszuschlag:</strong>
 <ul>
 <li>Steuersubjekt: jurist. und natürliche Personen</li>
 <li>Bemessungsgrundlage: Est und Kst</li>
 <li>Steuersatz: 5.5%</li>
-</ul>
-</li>
-<li>
-<strong>Kirchensteuer:</strong>
-
+</ul></li>
+<li><strong>Kirchensteuer:</strong>
 <ul>
 <li>Steuersubjekt: natürliche Personen</li>
 <li>Bemessungsgrundlage: Est</li>
 <li>Steuersatz: 8-9%</li>
-</ul>
-</li>
-<li>
-<strong>Gewerbesteuer:</strong>
-
+</ul></li>
+<li><strong>Gewerbesteuer:</strong>
 <ul>
 <li>Steuersubjekt: Gewerbe</li>
 <li>Bemessungsgrundlage: Steuermessbetrag, ermittelt aus dem Gewerbeertrag</li>
 <li>Steuersatz: regional unterschiedliche Hebesätze</li>
 <li>Bsp: Steuer = ((Gewerbesatz - Freibetrag¹) * Steuermesszahl) * Hebesatz²</li>
+</ul></li>
 </ul>
-</li>
-</ul><p>¹ nur bei Personengesellschaften
+
+<p>¹ nur bei Personengesellschaften
 ² regional abhängig</p>
 
 <ul>
-<li>
-<strong>Umsatzsteuer:</strong>
-
+<li><strong>Umsatzsteuer:</strong>
 <ul>
 <li>Steuersubjekt: liefernde/leistende Unternehmen</li>
 <li>Bemessungsgrundlage: in Rechnung gestelltes Entgelt</li>
@@ -303,303 +493,376 @@ Gesellschaftern versteuert (Trennungsprinzip)</li>
 <li>indirekte Steuer: Steuerschuldner (Konsument) != Steuerträger (Verkäufer), d.h. das Unternehmen statt dem Kunden führt die Steuer ab</li>
 <li>Umsatzsteuer kann als Vorsteuer geltend gemacht werden, wenn die Güter für
 unternehmerische Zwecke einsetzt werden</li>
+</ul></li>
 </ul>
-</li>
-</ul><h1>
-<a name="rechnungswesen-extern" class="anchor" href="#rechnungswesen-extern"><span class="octicon octicon-link"></span></a>Rechnungswesen Extern</h1>
+
+<h2>Rechnungswesen Extern</h2>
 
 <ul>
-<li>Güterwirtschaftlicher Bereich -&gt; Gewinnmaximierung (Ziel)</li>
-<li>Finanzwirtschaftlicher Bereich -&gt; Liquidität (Ziel)</li>
+<li>Güterwirtschaftlicher Bereich -> Gewinnmaximierung (Ziel)</li>
+<li>Finanzwirtschaftlicher Bereich -> Liquidität (Ziel)</li>
 <li>Abschreibung: Kosten für Wertgegenstände können nicht sofort in der Gewinn-
 und Verlustrechnung als Kosten eingerechnet werden, sondern müssen über die Nutzungsdauer
 abgeschrieben werden</li>
-</ul><h2>
-<a name="buchfhrung" class="anchor" href="#buchfhrung"><span class="octicon octicon-link"></span></a>Buchführung</h2>
+</ul>
+
+<h3>Buchführung</h3>
 
 <ul>
 <li>einfache Buchführungspflicht
-
 <ul>
 <li>alle Ausgaben und Einnahmen chronologisch erfasst</li>
-<li>Gewinn: Einnahmen-Überschuss-Rechnung =&gt; (Einnahmen - Ausgaben) &gt; 0</li>
+<li>Gewinn: Einnahmen-Überschuss-Rechnung => (Einnahmen - Ausgaben) > 0</li>
 <li>für Freiberufler/Kleingewerbetreibende</li>
-</ul>
-</li>
+</ul></li>
 <li>doppelte Buchführungspflicht
-
 <ul>
 <li>jeder Geschäftsvorfall wird auf 2 Konten erfasst</li>
-<li>Gewinn: Vermögensvergleich (Betriebsvermögen dieses Jahr - Betriebsvermögen letztes Jahr) &gt; 0</li>
+<li>Gewinn: Vermögensvergleich (Betriebsvermögen dieses Jahr - Betriebsvermögen letztes Jahr) > 0</li>
 <li>für alle Handelsgewerbetreibende</li>
+</ul></li>
 </ul>
-</li>
-</ul><h2>
-<a name="doppelte-buchfhrung" class="anchor" href="#doppelte-buchfhrung"><span class="octicon octicon-link"></span></a>doppelte Buchführung</h2>
+
+<h3>doppelte Buchführung</h3>
 
 <table>
-<tr>
-<th>Activa</th>
-<th>Passiva</th>
+  <tr>
+    <th>Activa</th><th>Passiva</th>
   </tr>
-<tr>
-<td>
+  <tr>
+    <td>
       Anlagevermögen
       <ul>
-<li>Immaterielle Vermögensgegenstände</li>
+      <li>Immaterielle Vermögensgegenstände</li>
       <li>Sachanlagen</li>
       <li>Finanzanlagen</li>
       </ul>
-</td>
+    </td>
     <td>
       Eigenkapital
       <ul>
-<li>Gezeichnetes Kapital</li>
+        <li>Gezeichnetes Kapital</li>
         <li>Kapital-/Gewinnrücklage</li>
         <li>Gewinn-/Verlustvortrag</li>
         <li>Jahresüberschuss/-fehlbetrag</li>
       </ul>
-</td>
+    </td>
   </tr>
-<tr>
-<td>
+  <tr>
+    <td>
       Umlaufvermögen
       <ul>
-<li>Vorräte</li>
+        <li>Vorräte</li>
         <li>Forderungen</li>
         <li>Wertpapiere</li>
         <li>Liquide Mittel</li>
       </ul>
-</td>
+    </td>
     <td>
       Rückstellungen
       <ul>
-<li>Pensionsrückstellungen</li>
+        <li>Pensionsrückstellungen</li>
         <li>Steuerrückstellungen</li>
         <li>Sonst. Rückstellungen</li>
       </ul>
-</td>
+    </td>
   </tr>
-<tr>
-<td>
+  <tr>
+    <td>
     </td>
     <td>
       Verbindlichkeiten
       <ul>
-<li>gegenüber Kreditinstituten</li>
+        <li>gegenüber Kreditinstituten</li>
         <li>aus Lieferungen und Leistungen</li>
       </ul>
-</td>
+    </td>
   </tr>
-<tr>
-<td>
+  <tr>
+    <td>
       Rechnungsabgrenzungsposten
     </td>
     <td>
       Rechnungsabgrenzungsposten
     </td>
   </tr>
-<tr>
-<td>
-      Summe Activa -&gt; Gesamtvermögen
+  <tr>
+    <td>
+      Summe Activa -> Gesamtvermögen
     </td>
     <td>
-      Summe Pasiva -&gt; Gesamtkapital
+      Summe Pasiva -> Gesamtkapital
     </td>
   </tr>
-</table><ul>
-<li>
-<strong>Zufluss- und Abflussrechnung bei Einnahme-Überschuss-Rechnung</strong>
+</table>
 
+<ul>
+<li><strong>Zufluss- und Abflussrechnung bei Einnahme-Überschuss-Rechnung</strong>
 <ul>
 <li>Gegenüberstellung von Einahmen/Ausgaben im Zeitraum</li>
 <li>Ausnahmen:
-
 <ul>
-<li>abnutzbare Anlagegüter -&gt; Ausgabe über Abschreibung</li>
-<li>nicht-abnutzbare Anlagegüter -&gt; Ausgabe bei Verkauf/Entnahme</li>
-<li>Kredite -&gt; Aufnahme/Tilgung finden keine Berücksichtigung, Zinsen sind Ausgaben</li>
-<li>private Entnahme/Einlage -&gt; Geld nicht berücksichtigt, Güter schon</li>
-<li>regelmäßige Ausgaben/Einahmen -&gt;
+<li>abnutzbare Anlagegüter -> Ausgabe über Abschreibung</li>
+<li>nicht-abnutzbare Anlagegüter -> Ausgabe bei Verkauf/Entnahme</li>
+<li>Kredite -> Aufnahme/Tilgung finden keine Berücksichtigung, Zinsen sind Ausgaben</li>
+<li>private Entnahme/Einlage -> Geld nicht berücksichtigt, Güter schon</li>
+<li>regelmäßige Ausgaben/Einahmen ->
 10-Tage-Regel: regelmäßige Rechnungen zählen zum bis zum 10.01 zum Jahr der
 wirtschaftl. Zugehörigkeit</li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul><h1>
-<a name="rechnungswesen-intern" class="anchor" href="#rechnungswesen-intern"><span class="octicon octicon-link"></span></a>Rechnungswesen Intern</h1>
+
+<h2>Rechnungswesen Intern</h2>
 
 <ul>
 <li>Kostenartenrechnung: Einteilung der Kosten nach
-
 <ul>
 <li>Art: z.B. Sach-, Personal-, Dienstleistungskosten</li>
 <li>betrieblicher Funktion: z.B. Beschaffung-, Fertigungs-, Verwaltungskosten</li>
 <li>Beschäftigungsabhängigkeit: fixe Kosten, variable Kosten</li>
 <li>Art der Verrechnung: Gemein- und Einzelkosten</li>
 <li>kalkukatorische Kosten:
-
 <ul>
 <li>Anderskosten:
-
 <ul>
 <li>kalk. Abschreibung (Basis: Wiederbeschaffungskosten),</li>
 <li>kalk. Wagnisse (Basis: Wagnisverluste der Vergangenheit)</li>
-</ul>
-</li>
+</ul></li>
 <li>Zusatzkosten:
-
 <ul>
 <li>kalk. Miete (bei private Räume),</li>
 <li>kalk. Unternehmenslohn</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
+</ul></li>
 <li>Kostenstellenrechnung:
-
 <ul>
 <li>Verteilung der Gemeinkosten auf Unternehmensbereiche (Haupt- u.
 Nebenkostenstellen)</li>
 <li>Verrechnung der Gemeinkosten der Hilfkostenstellen auf die
 Hauptkostenstellen mit Verrechnungsätze, z.B. Stufenleiterverfahren</li>
-</ul>
-</li>
+</ul></li>
 <li>Kostenträgerrechnung:
-
 <ul>
 <li>Kostenträgerzeitrechnung:</li>
-<li>Kostenträgerstückrechnung (Zuschlagskalkulation):
-
-<ul>
+<li>Kostenträgerstückrechnung (Zuschlagskalkulation):</li>
 <li>Materialkosten = Einzelkosten + anteilige Gemeinkosten</li>
 <li>Fertigungskosten = Einzelkosten + anteilige Gemeinkosten</li>
 <li>Herstellerkosten = Material + Fertigung</li>
-<li>Selbstkosten = Verwaltung + Vertrieb + Herstellung </li>
+<li>Selbstkosten = Verwaltung + Vertrieb + Herstellung </br></li>
 <li>Zuschlagssatz = Gemeinkosten / Einzelkosten * 100%</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul><h2>
-<a name="stufenleiterrechnung" class="anchor" href="#stufenleiterrechnung"><span class="octicon octicon-link"></span></a>Stufenleiterrechnung</h2>
+
+<h3>Stufenleiterrechnung</h3>
 
 <ol>
 <li>Hilfkostenstellen sortieren nach, der mit dem meisten Leistungsüberschuss</li>
 <li>Umlage der Leistungen der Hilfsks. an die anderen Hilfsks. in der gegebenen Reihenfolge</li>
 <li>Umlage der Leistungen nach ihrer in Anspruchnahme an die Hauptkostenstellen</li>
-</ol><h1>
-<a name="finanzplanung" class="anchor" href="#finanzplanung"><span class="octicon octicon-link"></span></a>Finanzplanung</h1>
+</ol>
+
+<h2>Finanzplanung</h2>
 
 <ul>
 <li>Hauptziel: Liquidität</li>
 <li>Kapitalbedarf = Auszahlung - Eigenkapital</li>
 <li>Einzelpläne:
-
 <ul>
-<li>
-<strong>Umsatzplanung:</strong> Entwicklung der Erlöse</li>
-<li>
-<strong>Investitionsplanung:</strong> geplanten Investitionen
-
+<li><strong>Umsatzplanung:</strong> Entwicklung der Erlöse</li>
+<li><strong>Investitionsplanung:</strong> geplanten Investitionen
 <ul>
-<li>
-<em>liquiditätswirksam:</em> Anschaffungskosten müssen gedeckt sein</li>
-<li>
-<em>erfolgswirksam:</em> Abschreibung pro Jahr bei Gewinn-/Verlustrechnung</li>
-</ul>
-</li>
-<li>
-<strong>Kostenplanung:</strong> entstehende Kosten</li>
-<li>
-<strong>Kapitalbedarfsplanung:</strong> Ermittlung des Gesamtkapitalbedarfs</li>
+<li><em>liquiditätswirksam:</em> Anschaffungskosten müssen gedeckt sein</li>
+<li><em>erfolgswirksam:</em> Abschreibung pro Jahr bei Gewinn-/Verlustrechnung</li>
+</ul></li>
+<li><strong>Kostenplanung:</strong> entstehende Kosten</li>
+<li><strong>Kapitalbedarfsplanung:</strong> Ermittlung des Gesamtkapitalbedarfs</li>
 <li>(Produktions- und Beschaffungsplanung)</li>
 <li>(Personalplanung)</li>
+</ul></li>
 </ul>
-</li>
-<li>Finanzplan:
+
+<h3>Finanzplan</h3>
 
 <ul>
-<li>
-<strong>Erfolgsplanung:</strong> (finanzielle) Gewinn- und Verlustrechnung</li>
-<li>
-<strong>Liquiditätsplanung:</strong> Entwicklung und Sicherstellung jederzeitiger Liquidität
-(-&gt; Erkennen von Engpässen)</li>
-<li>
-<strong>Planbilanz:</strong> Ermittlung der Aktiva und Passiva -&gt; Hinweise auf Vermögens- und Finanzlage</li>
+<li><strong>Erfolgsplanung:</strong> (finanzielle) Gewinn- und Verlustrechnung</li>
+<li><strong>Liquiditätsplanung:</strong> Entwicklung und Sicherstellung jederzeitiger Liquidität
+(-> Erkennen von Engpässen)</li>
+<li><strong>Planbilanz:</strong> Ermittlung der Aktiva und Passiva -> Hinweise auf Vermögens- und Finanzlage</li>
 </ul>
-</li>
-<li>Kennzahlenanalyse:
+
+<h3>Kennzahlenanalyse</h3>
 
 <ul>
 <li>bestandsorientiert:
-
 <ul>
-<li>Kapitalstruktur:
-
+<li><strong>Kapitalstruktur:</strong>
 <ul>
-<li>
-<strong>Eigenkapitalquote</strong> = Eigenkapitial / (Eigenkapital + Fremdkapital)</li>
-<li>
-<strong>Fremdkapitalquote</strong> = Fremdkapital / (Eigenkaptial + Fremdkapital)</li>
-<li>
-<strong>Verschuldungsgrad</strong> = Fremdkaptial / Eigenkaptial</li>
-</ul>
-</li>
-<li>Vermögensstruktur:
-
+<li><em>Eigenkapitalquote</em> = Eigenkapitial / (Eigenkapital + Fremdkapital)</li>
+<li><em>Fremdkapitalquote</em> = Fremdkapital / (Eigenkaptial + Fremdkapital)</li>
+<li><em>Verschuldungsgrad</em> = Fremdkaptial / Eigenkaptial</li>
+</ul></li>
+<li><strong>Vermögensstruktur:</strong>
 <ul>
-<li>
-<strong>Anlagenintensität</strong> = Anlagevermögen / Umlaufvermögen * 100%</li>
-<li>
-<strong>Umlaufintensität</strong> = Anlagevermögen(Umlaufvermögen) / (Anlagevermögen + Umlaufvermögen) * 100%</li>
-</ul>
-</li>
-<li>Liquiditätsregeln:
-
+<li><em>Anlagenintensität</em> = Anlagevermögen / Umlaufvermögen * 100%</li>
+<li><em>Umlaufintensität</em> = Anlagevermögen(Umlaufvermögen) / (Anlagevermögen + Umlaufvermögen) * 100%</li>
+</ul></li>
+<li><strong>Liquiditätsregeln:</strong>
 <ul>
-<li>1. Grad: liq. Mittel / Verbindlichkeiten &gt;= 1</li>
-<li>2. Grad: (liq. Mittel + kurzfri. Forderungen) / Verbindlichkeiten &gt;= 1</li>
-<li>3. Grad: (liq. Mittel + kurzfri. Forderungen + Vorräte) / Verbindlichkeiten &gt;= 1</li>
-</ul>
-</li>
-</ul>
-</li>
+<li><ol>
+<li>Grad: liq. Mittel / Verbindlichkeiten >= 1</li>
+</ol></li>
+<li><ol>
+<li>Grad: (liq. Mittel + kurzfri. Forderungen) / Verbindlichkeiten >= 1</li>
+</ol></li>
+<li><ol>
+<li>Grad: (liq. Mittel + kurzfri. Forderungen + Vorräte) / Verbindlichkeiten >= 1</li>
+</ol></li>
+</ul></li>
+</ul></li>
 <li>stromgrößenorientiert:
+<ul>
+<li>absolute Erfolgskennzahlen
+<ul>
+<li><em>Bilanzgewinn:</em> Jahresüberschuss</li>
+<li><em>Cashflow:</em> Überschuss der Ertrag über Aufwandsauszahlungen</li>
+</ul></li>
+<li>relative Erfolgskennzahlen
+<ul>
+<li><em>Eigenkapitalrentabiltät</em> = Gewinn / Eigenkapital * 100%</li>
+<li><em>Gesamtkapitalrentabiltät</em> = (Gewinn + Fremdzinsen) / (Eigenkapital + Fremdkaptial) * 100%</li>
+<li><em>Umsatzrentabiltät</em> = (Gewinn) / (Umsatz) * 100%</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2>Finanzierung</h2>
+
+<h3>Fremd/Eigenkapital (Unterschied)</h3>
+
+<table>
+  <tr>
+    <th></th><th>Eigenkapital</th><th>Fremdkapital</th>
+  </tr>
+  <tr>
+    <th>
+      Kapitalgeber
+    </th>
+    <td>
+      (Mit-)Eigentümer
+    </td>
+    <td>
+      Gläubiger
+    </td>
+  </tr>
+  <tr>
+    <th>
+     Dauer
+    </th>
+    <td>
+      unbegrenzt
+    </td>
+    <td>
+      begrenzt
+    </td>
+  </tr>
+  <tr>
+    <th>
+     Entschädigung
+    </th>
+    <td>
+      Gewinn
+    </td>
+    <td>
+      Zins
+    </td>
+  </tr>
+  <tr>
+    <th>
+      Rückzahlung
+    </th>
+    <td>
+      nein
+    </td>
+    <td>
+      ja
+    </td>
+  </tr>
+  <tr>
+    <th>
+      Mitbestimmung
+    </th>
+    <td>
+      ja
+    </td>
+    <td>
+      nein
+    </td>
+  </tr>
+  <tr>
+    <th>
+      Haftung
+    </th>
+    <td>
+      haftet
+    </td>
+    <td>
+      haftet nicht
+    </td>
+  </tr>
+  <tr>
+    <th>
+      steuerliche
+      Behandlung der
+      Kapitalkosten
+    </th>
+    <td>
+      Gewinne nicht abzugsfähig
+    </td>
+    <td>
+      Zinsen abzugsfähig
+    </td>
+  </tr>
+</table>
+
+<h3>VC (deutsch: Wagniskapital)</h3>
 
 <ul>
-<li>absolute Erfolgskennzahlen</li>
-<li>
-<strong>Bilanzgewinn</strong> -&gt; Jahresüberschuss</li>
-<li>
-<strong>Cashflow:</strong> Überschuss der Ertrag über Aufwandsauszahlungen</li>
-<li>relative Erfolgskennzahlen</li>
-<li>
-<strong>Eigenkapitalrentabiltät</strong> = Gewinn / Eigenkapital * 100%</li>
-<li>
-<strong>Gesamtkapitalrentabiltät</strong> = (Gewinn + Fremdzinsen) / (Eigenkapital + Fremdkaptial) * 100%</li>
-<li>
-<strong>Umsatzrentabiltät</strong> = (Gewinn) / (Umsatz) * 100%</li>
+<li>Eigenkapitalfinanzierung</li>
+<li>zeitlich begrenzt</li>
+<li>Mitspracherecht</li>
+<li>Managementfunktion</li>
+<li>Minderheitsbeteiligung</li>
+<li>Sonderform: Buisness Angle (informelles VC - mehr Wissenstransfer als Kapital)</li>
 </ul>
-</li>
+
+<h3>Kredit - Merkmale</h3>
+
+<ul>
+<li><strong>Laufzeit</strong>
+<ul>
+<li>kurzfristig: Lieferantenkredit, Dispo</li>
+<li>mittle-/langfristig: Darlehen, Hypothek</li>
+<li>Kündigung-/Verlängerung</li>
+</ul></li>
+<li><strong>Auszahlungs-/Rückzahlungsbetrag</strong>
+<ul>
+<li>Auszahlungsbetrag != Nominalbetrag (Einzahlbetrag)</li>
+</ul></li>
+<li><strong>Sicherheiten</strong>
+<ul>
+<li>Bürgschaft, Pfand, Sicherheitsabtretung</li>
+</ul></li>
+<li><strong>Zins</strong>
+<ul>
+<li>-termine, -bindung, Effektivzins</li>
+</ul></li>
+<li><p><strong>Tilungsstruktur</strong></p>
+
+<ul>
+<li>z.B.: Annuitätentilgung(erst Zinsen hoch und Tilgung niedrig, später umgedreht)</li>
+</ul></li>
+<li><p>bei Fragen</p></li>
 </ul>
-</li>
-</ul>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">BWL Prüfungsvorbereitung maintained by <a href="https://github.com/Mic92">Mic92</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
 </html>
