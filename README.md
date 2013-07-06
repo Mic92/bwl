@@ -2,6 +2,7 @@
 ==========================================
 
 Stand:  Sa 6. Jul 19:41:10 2013
+
 Prüfungsvorbereitung für [Vorlesung](http://tu-dresden.de/veranstaltungen/termin/?id=TUD4f6b02ac57889) der Studium Generale von Jörg Knorr
 
 [Link zu diesem Dokument](http://mic92.github.io/bwl)
