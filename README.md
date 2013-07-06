@@ -56,6 +56,7 @@ Marketing
 3. **Zielmarktfestlegung**
 4. **Positionierung:**
    * Timingstrategien (Zeit des Markteintritt: Pionier,frühe Folger,später Folger)
+
 * **Markteintrittsbarriere:** Hindernisse, die den Markteintritt; Nachteile gegenüber etablierten Unternehmen
 * **Substitute:** Produkte/Dienstleistungen, die das selbe Bedürfnis auf andere Weise befriedigen
 * **Branchenanalyse:** 5-Forces nach Porter
@@ -76,7 +77,7 @@ Rechtsformen
 
 ### Gewerbe
 
-Jede wirtschaftlichte Tätigkeit mit Gewinnerzielung mit Ausnahme der *freien Berufe* und
+Jede wirtschaftliche Tätigkeit mit Gewinnerzielung mit Ausnahme der *freien Berufe* und
 Landwirtschaft zählt zum Gewerbe.
 
 Folgen:
@@ -87,7 +88,7 @@ Folgen:
 
 ### Freie Berufe
 
-* ausgewählte Berufe, selbsständig, besondere Qualifikation
+* ausgewählte Berufe, selbstständig, besondere Qualifikation
 * einfache Buchführung
 
 ### Kaufmann
@@ -98,7 +99,7 @@ Folgen:
 * **Formkaufmann:** Handelsgesellschaften (Rechtsform bedingt)
 * Folgen:
   * Recht auf *Firmennamen/Schutz* vor Verwechselung
-  * können *Prokura* (Handelsvollmacht) ersteilen -> geschäftliche
+  * können *Prokura* (Handelsvollmacht) erteilen -> geschäftliche
     Vertretungsmacht
   * müssen Handelsbücher/Bilanzen/Inventuren führen
   * können im Namen der Firma klagen
@@ -109,11 +110,11 @@ Folgen:
   * unbeschränkte Haftung -> hohes Risiko bei Fehlentscheidungen, aber hohe
     Kreditglaubwürdigkeit
   * unterliegt einer (natürlichen) Person
-  * kein Mindeskapital/Gründungskosten
+  * kein Mindestkapital/Gründungskosten
   * keine Gewinnteilung
 * **Personengesellschaften:** Gbr, OHG, Kommanditgesellschaft (KG), PartG
   * Zusammenschluss mehrerer Personen (nat./jur.) durch einen Gesellschaftsvertrag
-  * Haftung: in der Regel unbeschränkt, Außnahme KG
+  * Haftung: in der Regel unbeschränkt, Ausnahme KG
   * Gewinnbesteuerung: Gewinn wird auf Gesellschafter verteilt und bei diesen
     versteuert (Transparenzprinzip)
   * Mitwirkung: ?
@@ -254,7 +255,7 @@ Rechnungswesen Extern
 </table>
 
 * **Zufluss- und Abflussrechnung bei Einnahme-Überschuss-Rechnung**
-  * Gegenüberstellung von Einahmen/Ausgaben im Zeitraum
+  * Gegenüberstellung von Einnahmen/Ausgaben im Zeitraum
   * Ausnahmen:
      * abnutzbare Anlagegüter -> Ausgabe über Abschreibung
      * nicht-abnutzbare Anlagegüter -> Ausgabe bei Verkauf/Entnahme
@@ -441,7 +442,7 @@ Finanzierung
 * Mitspracherecht
 * Managementfunktion
 * Minderheitsbeteiligung
-* Sonderform: Buisness Angle (informelles VC - mehr Wissenstransfer als Kapital)
+* Sonderform: Business Angle (informelles VC - mehr Wissenstransfer als Kapital)
 
 ### Kredit - Merkmale
 
