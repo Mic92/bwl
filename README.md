@@ -114,7 +114,7 @@ Folgen:
   * unterliegt einer (natürlichen) Person
   * kein Mindestkapital/Gründungskosten
   * keine Gewinnteilung
-* **Personengesellschaften:** Gbr, OHG, Kommanditgesellschaft (KG), PartG
+* **Personengesellschaften:** Gbr, Offene Handelsgesellschaft (OHG), Kommanditgesellschaft (KG), PartG
   * Zusammenschluss mehrerer Personen (nat./jur.) durch einen Gesellschaftsvertrag
   * Haftung: in der Regel unbeschränkt, Ausnahme KG
   * Gewinnbesteuerung: Gewinn wird auf Gesellschafter verteilt und bei diesen
@@ -333,7 +333,7 @@ Finanzplanung
        * *Verschuldungsgrad* = Fremdkaptial / Eigenkaptial
    * **Vermögensstruktur:**
        * *Anlagenintensität* = Anlagevermögen / Umlaufvermögen * 100%
-       * *Umlaufintensität* = Anlagevermögen(Umlaufvermögen) / (Anlagevermögen + Umlaufvermögen) * 100%
+       * *Umlaufintensität* = Umlaufvermögen / Gesamtkapital * 100%
    * **Liquiditätsregeln:**
        * 1. Grad: liq. Mittel / Verbindlichkeiten >= 1
        * 2. Grad: (liq. Mittel + kurzfri. Forderungen) / Verbindlichkeiten >= 1
