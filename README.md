@@ -257,7 +257,7 @@ Rechnungswesen Extern
       Summe Activa -> Gesamtvermögen
     </td>
     <td>
-      Summe Pasiva -> Gesamtkapital
+      Summe Passiva -> Gesamtkapital
     </td>
   </tr>
 </table>
@@ -389,7 +389,7 @@ Finanzierung
      Entschädigung
     </th>
     <td>
-      Gewinn
+      Gewinnausschüttungen
     </td>
     <td>
       Zins
