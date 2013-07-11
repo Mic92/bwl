@@ -65,8 +65,10 @@ Marketing
 
 **Branchenanalyse:** 5-Forces nach Porter
 
-  von Drtuxy unter der CC by-Lizenz
+
   ![5-Forces](http://i.imgur.com/EhN9ua1.png)
+
+  von Drtuxy unter der CC by-Lizenz
 
 **SWOT-Analyse**: Matrix -> horizontal: Stärken/Schwächen, vertikal: Chancen/Risiken
 
