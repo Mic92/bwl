@@ -467,4 +467,4 @@ Finanzierung
 * **Tilungsstruktur**
   * z.B.: Annuitätentilgung(erst Zinsen hoch und Tilgung niedrig, später umgedreht)
 
-* bei Fragen einfach eine Nachricht an joerg@higgsboson.tk
+bei Fragen einfach eine Nachricht an joerg@higgsboson.tk
