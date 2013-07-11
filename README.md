@@ -1,7 +1,7 @@
 ﻿Gründungsorientierte Einführung in die BWL
 ==========================================
 
-Stand:  Sa 6. Jul 19:41:10 2013
+Stand:  Do 11. Jul 14:14:57 CEST 2013
 
 Prüfungsvorbereitung für [Vorlesung](http://tu-dresden.de/veranstaltungen/termin/?id=TUD4f6b02ac57889) der Studium Generale von Jörg Knorr
 
@@ -59,12 +59,16 @@ Marketing
 4. **Positionierung:**
    * Timingstrategien (Zeit des Markteintritt: Pionier,frühe Folger,später Folger)
 
-* **Markteintrittsbarriere:** Hindernisse, die den Markteintritt; Nachteile gegenüber etablierten Unternehmen
-* **Substitute:** Produkte/Dienstleistungen, die das selbe Bedürfnis auf andere Weise befriedigen
-* **Branchenanalyse:** 5-Forces nach Porter
-  ![5-Forces](http://i.imgur.com/EhN9ua1.png)
+**Markteintrittsbarriere:** Hindernisse, die den Markteintritt; Nachteile gegenüber etablierten Unternehmen
+
+**Substitute:** Produkte/Dienstleistungen, die das selbe Bedürfnis auf andere Weise befriedigen
+
+**Branchenanalyse:** 5-Forces nach Porter
+
   von Drtuxy unter der CC by-Lizenz
-* **SWOT-Analyse**: Matrix -> horizontal: Stärken/Schwächen, vertikal: Chancen/Risiken
+  ![5-Forces](http://i.imgur.com/EhN9ua1.png)
+
+**SWOT-Analyse**: Matrix -> horizontal: Stärken/Schwächen, vertikal: Chancen/Risiken
 
 Unternehmensnachfolge
 ---------------------
@@ -335,9 +339,9 @@ Finanzplanung
        * *Anlagenintensität* = Anlagevermögen / Umlaufvermögen * 100%
        * *Umlaufintensität* = Umlaufvermögen / Gesamtkapital * 100%
    * **Liquiditätsregeln:**
-       * 1. Grad: liq. Mittel / Verbindlichkeiten >= 1
-       * 2. Grad: (liq. Mittel + kurzfri. Forderungen) / Verbindlichkeiten >= 1
-       * 3. Grad: (liq. Mittel + kurzfri. Forderungen + Vorräte) / Verbindlichkeiten >= 1
+       * 1th Grad: liq. Mittel / Verbindlichkeiten >= 1
+       * 2th Grad: (liq. Mittel + kurzfri. Forderungen) / Verbindlichkeiten >= 1
+       * 3th Grad: (liq. Mittel + kurzfri. Forderungen + Vorräte) / Verbindlichkeiten >= 1
 * stromgrößenorientiert:
    * absolute Erfolgskennzahlen
        * *Bilanzgewinn:* Jahresüberschuss
